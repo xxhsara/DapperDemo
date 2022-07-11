@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\09项目实战\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj": {}
+    "E:\\work\\Github代码\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj": {}
   },
   "projects": {
-    "E:\\09项目实战\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj": {
+    "E:\\work\\Github代码\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\09项目实战\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj",
+        "projectUniqueName": "E:\\work\\Github代码\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj",
         "projectName": "DapperDemo",
-        "projectPath": "E:\\09项目实战\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj",
-        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-        "outputPath": "E:\\09项目实战\\DapperDemo\\DapperDemo\\DapperDemo\\obj\\",
+        "projectPath": "E:\\work\\Github代码\\DapperDemo\\DapperDemo\\DapperDemo\\DapperDemo.csproj",
+        "packagesPath": "C:\\Users\\xianghua.xie\\.nuget\\packages\\",
+        "outputPath": "E:\\work\\Github代码\\DapperDemo\\DapperDemo\\DapperDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\xianghua.xie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.yhglobal.cn/repository/nuget-group/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -78,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

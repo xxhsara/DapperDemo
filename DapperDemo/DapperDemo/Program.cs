@@ -11,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<ConnConfig>(builder.Configuration.GetSection("ConnConfig"));
 builder.Services.AddAutoMapper(typeof(MapperProfile));
+builder.Services.AddSingleton<DbConnectionFactory>();
+builder.Services.AddTransient(typeof(IDbService), typeof(DbService));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
