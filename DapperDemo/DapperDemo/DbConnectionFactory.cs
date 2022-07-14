@@ -6,13 +6,13 @@ namespace DapperDemo
 {
     public class DbConnectionFactory
     {
-        private static ConnConfig _connConfig;
+        private  ConnConfig _connConfig;
         public DbConnectionFactory(IOptions<ConnConfig> connConfig)
         {
             _connConfig = connConfig.Value;
         }
 
-        public static IDbConnection GetDbConn(SqlTypeEnum connType)
+        public IDbConnection GetDbConn(SqlTypeEnum connType)
         {
             IDbConnection dbConnection;
             switch(connType)

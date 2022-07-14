@@ -8,14 +8,16 @@ namespace DapperDemo
     public class DbService : IDbService
     {
         private IMapper _mapper;
-        public DbService(IMapper mapper)
+        private DbConnectionFactory _dbFactory;
+        public DbService(IMapper mapper, DbConnectionFactory dbFactory)
         {
             _mapper = mapper;
+            _dbFactory= dbFactory;
         }
         public AccountDto GetData(string name)
         {
-            var dbConnection = DbConnectionFactory.GetDbConn(SqlTypeEnum.SqlServer);
-            var account=dbConnection.Query<Account>($"select * from account where name =@name", new { name = name });
+            var dbConnection = _dbFactory.GetDbConn(SqlTypeEnum.SqlServer);
+            var account=dbConnection.QueryFirstOrDefault<Account>($"select * from account where name =@name", new { name = name });
             var dto = _mapper.Map<AccountDto>(account);
             return dto;
         }
